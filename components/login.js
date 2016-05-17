@@ -20,7 +20,7 @@ module.exports = function signin(req, res) {
 		}
 
 		if (count != 1) {
-			res.send({login: false, err: 'there are some unknown error'})
+			res.send({login: false, err: '用户不存在'})
 			return
 		}else {
 			// 返回响应到客户端   
